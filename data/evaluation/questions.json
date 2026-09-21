@@ -1,0 +1,1166 @@
+[
+  {
+    "question_id": "syn_0001",
+    "question": "Which core clinical areas exhibit pronounced variability among sepsis guidelines?",
+    "expected_information": "The answer should list fluid resuscitation, antimicrobial therapy, vasopressor and inotrope use, corticosteroids, source control, blood glucose management, hemodynamic management, and mechanical ventilation management as the areas with notable variability.",
+    "relevant_document_ids": [
+      "PMC12070244"
+    ],
+    "relevant_chunk_ids": [
+      "PMC12070244::0001::b90e3430"
+    ],
+    "must_include_terms": [],
+    "category": "definition",
+    "source_title": "A systematic methodological evaluation of sepsis guidelines: Protocol for quality assessment and consistency of recommendations",
+    "lexical_overlap": 0.889,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0002",
+    "question": "What imaging modalities and intervals are recommended for vascular assessment in patients with STAT3-HIES, particularly regarding coronary and intracranial vessels?",
+    "expected_information": "The answer should state that echocardiography is used in young children, while CT or MR angiography of intracranial and coronary vessels is recommended at diagnosis from age 10 onward, with repeat imaging if abnormalities are found and routine surveillance MRI and coronary angiography every 5 years if baseline imaging is normal.",
+    "relevant_document_ids": [
+      "PMC13220966"
+    ],
+    "relevant_chunk_ids": [
+      "PMC13220966::0005::e278f7d6"
+    ],
+    "must_include_terms": [],
+    "category": "diagnosis",
+    "source_title": "How I Treat: STAT3 hyper IgE syndrome",
+    "lexical_overlap": 0.786,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0004",
+    "question": "What proportion of severe asthma patients receiving omalizumab were diagnosed with COVID\u201119 in the Spanish multicentre cohort study?",
+    "expected_information": "The answer should state that 14 out of 263 omalizumab patients (5.3%) were diagnosed with COVID\u201119.",
+    "relevant_document_ids": [
+      "PMC8675091"
+    ],
+    "relevant_chunk_ids": [
+      "PMC8675091::0012::b452eb18"
+    ],
+    "must_include_terms": [],
+    "category": "risk_factors",
+    "source_title": "Understanding and Managing Severe Asthma in the Context of COVID-19",
+    "lexical_overlap": 0.846,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0005",
+    "question": "What percentage of the CKD-SMS study participants were female?",
+    "expected_information": "The answer should state that 60.3% of participants were female.",
+    "relevant_document_ids": [
+      "PMC6195997"
+    ],
+    "relevant_chunk_ids": [
+      "PMC6195997::0015::8d0c40bb"
+    ],
+    "must_include_terms": [],
+    "category": "risk_factors",
+    "source_title": "Meeting patients where they are: improving outcomes in early chronic kidney disease with tailored self-management support (the CKD-SMS study)",
+    "lexical_overlap": 0.333,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0007",
+    "question": "What precautions should be taken when a patient on warfarin therapy starts or stops sertraline hydrochloride?",
+    "expected_information": "The answer must state that patients on warfarin should be closely monitored for altered anticoagulant effects, including increased bleeding, when sertraline is initiated or discontinued.",
+    "relevant_document_ids": [
+      "fda_sertraline_hydrochloride"
+    ],
+    "relevant_chunk_ids": [
+      "fda_sertraline_hydrochloride::0062::946f1241"
+    ],
+    "must_include_terms": [],
+    "category": "drug_interactions",
+    "source_title": "Sertraline Hydrochloride \u2014 FDA Prescribing Information",
+    "lexical_overlap": 0.5,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0009",
+    "question": "What screening tool was used to assess anxiety symptoms, and how was a clinical level of anxiety determined from its score?",
+    "expected_information": "The PHQ short screening tool (self\u2011administered PRIME\u2011MD) was used; a total score of 3 or more indicated a clinical level of anxiety.",
+    "relevant_document_ids": [
+      "PMC11839686"
+    ],
+    "relevant_chunk_ids": [
+      "PMC11839686::0010::90acae5d"
+    ],
+    "must_include_terms": [],
+    "category": "definition",
+    "source_title": "Investigating the association between work family conflict (WFC) and generalized anxiety disorder (GAD) in an Australian community-based cohort study",
+    "lexical_overlap": 0.909,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0010",
+    "question": "What diagnostic steps are recommended for a patient with persistent reflux symptoms who has not responded to acid\u2011suppressive therapy and whose initial upper endoscopy shows no evidence of reflux\u2011related mucosal damage?",
+    "expected_information": "The answer should state that after an unrevealing endoscopy, ambulatory reflux monitoring off PPI therapy\u2014either pH or pH\u2011impedance monitoring\u2014is performed to detect abnormal reflux burden and confirm GERD.",
+    "relevant_document_ids": [
+      "PMC10774805"
+    ],
+    "relevant_chunk_ids": [
+      "PMC10774805::0004::894d8c60"
+    ],
+    "must_include_terms": [],
+    "category": "diagnosis",
+    "source_title": "Refractory Gastroesophageal Reflux Disease: Diagnosis and Management",
+    "lexical_overlap": 0.682,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0011",
+    "question": "When was vagus nerve stimulation approved by the FDA for rheumatoid arthritis?",
+    "expected_information": "The FDA granted approval for vagus nerve stimulation in 2025.",
+    "relevant_document_ids": [
+      "PMC12942986"
+    ],
+    "relevant_chunk_ids": [
+      "PMC12942986::0028::85bae766"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Frontiers in Rheumatoid Arthritis: Emerging Research and Unmet Needs in Pharmacologic Management",
+    "lexical_overlap": 0.714,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0012",
+    "question": "What are the recommended starting doses, weekly increases, and maintenance doses for rasagiline, selegiline, and safinamide when used as add\u2011on therapy for Parkinson\u2019s disease?",
+    "expected_information": "The answer should state that rasagiline starts at 1\u202fmg once daily with no increase, maintaining 1\u202fmg; selegiline starts at 5\u202fmg once daily, can be increased weekly to 5\u202fmg twice daily or 10\u202fmg once daily, with a maintenance range of 5\u201310\u202fmg; safinamide starts at 50\u202fmg once daily (or 50\u202fmg for off\u2011symptoms, 100\u202fmg for dyskinesia), can be increased to 50\u2013100\u202fmg once daily, with a maintenance dose of 50\u2013100\u202fmg.",
+    "relevant_document_ids": [
+      "PMC11561004"
+    ],
+    "relevant_chunk_ids": [
+      "PMC11561004::0011::9b104cc7"
+    ],
+    "must_include_terms": [],
+    "category": "dosage",
+    "source_title": "Pharmacotherapy of motor symptoms in early and mid-stage Parkinson\u2019s disease: guideline \u201cParkinson\u2019s disease\u201d of the German Society of Neurology",
+    "lexical_overlap": 0.714,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0013",
+    "question": "What is the cost difference between insulin therapy and plasmapheresis for treating severe hypertriglyceridemia?",
+    "expected_information": "Insulin therapy is about 100 times cheaper than plasmapheresis.",
+    "relevant_document_ids": [
+      "PMC7437121"
+    ],
+    "relevant_chunk_ids": [
+      "PMC7437121::0005::2b79c5d1"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Diabetic Ketoacidosis, Very Severe Hypertriglyceridemia, and Pseudohyponatremia Successfully Managed With Insulin Infusion",
+    "lexical_overlap": 0.889,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0014",
+    "question": "What low\u2011molecular\u2011weight heparin dose was used in the PROTECHT trial for ambulatory cancer patients receiving chemotherapy?",
+    "expected_information": "The PROTECHT trial used nadroparin at a dose of 3,800 IU every 24 hours.",
+    "relevant_document_ids": [
+      "PMC4239786"
+    ],
+    "relevant_chunk_ids": [
+      "PMC4239786::0011::924d2a84"
+    ],
+    "must_include_terms": [],
+    "category": "dosage",
+    "source_title": "Clinical guide SEOM on venous thromboembolism in cancer patients",
+    "lexical_overlap": 0.692,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0015",
+    "question": "What systolic and diastolic blood pressure values does the WHO guideline recommend as the threshold for initiating pharmacological therapy in adults with hypertension?",
+    "expected_information": "The answer should state that pharmacological therapy should be started when blood pressure reaches or exceeds 140/90 mm\u202fHg.",
+    "relevant_document_ids": [
+      "PMC8654104"
+    ],
+    "relevant_chunk_ids": [
+      "PMC8654104::0000::983dec54"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Hypertension Pharmacological Treatment in Adults: A World Health Organization Guideline Executive Summary",
+    "lexical_overlap": 0.857,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0016",
+    "question": "What proportion of primary\u2011care physicians reported being \"very familiar\" with the opioid REMS education program according to the cited survey?",
+    "expected_information": "Less than 10% of surveyed primary\u2011care physicians were very familiar with the REMS education.",
+    "relevant_document_ids": [
+      "PMC4718419"
+    ],
+    "relevant_chunk_ids": [
+      "PMC4718419::0015::fb3e797f"
+    ],
+    "must_include_terms": [],
+    "category": "knowledge",
+    "source_title": "SCOPE of Pain : An Evaluation of an Opioid Risk Evaluation and Mitigation Strategy Continuing Education Program",
+    "lexical_overlap": 0.8,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0017",
+    "question": "For which pediatric patients is the 600\u202fmg/42.9\u202fmg per 5\u202fmL oral suspension of amoxicillin and clavulanate potassium indicated to treat recurrent or persistent acute otitis media?",
+    "expected_information": "The suspension is indicated for children 3\u202fmonths to 12\u202fyears old, weighing \u226440\u202fkg, with recurrent or persistent acute otitis media caused by susceptible S.\u202fpneumoniae (penicillin MIC \u22642\u202f\u00b5g/mL), H.\u202finfluenzae, or M.\u202fcatarrhalis, who have had antibacterial exposure for acute otitis media within the previous 3\u202fmonths and are either \u22642\u202fyears old or attend daycare.",
+    "relevant_document_ids": [
+      "fda_amoxicillin_and_clavulanate_potassium"
+    ],
+    "relevant_chunk_ids": [
+      "fda_amoxicillin_and_clavulanate_potassium::0001::6fe44250"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Amoxicillin And Clavulanate Potassium \u2014 FDA Prescribing Information",
+    "lexical_overlap": 1.0,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0019",
+    "question": "What pharmacological agents were used for thromboprophylaxis in breast cancer surgery studies, and how were they typically timed relative to surgery?",
+    "expected_information": "The answer should state that low\u2011molecular\u2011weight heparin (LMWH) and unfractionated heparin (UFH) were the most common agents, with aspirin and warfarin mentioned in one study; it should also describe that UFH was used in all six studies, LMWH in two, and that timing varied from pre\u2011operative (e.g., 2\u202fh before surgery or 88.4\u202f% pre\u2011op) to postoperative (e.g., 72.4\u202f% post\u2011op, 5000\u202funits SC every 12\u202fh, or started the evening of surgery or next morning).",
+    "relevant_document_ids": [
+      "PMC11824860"
+    ],
+    "relevant_chunk_ids": [
+      "PMC11824860::0013::f7d83dc1"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "The Risk of Haematoma and Venous Thrombosis Associated With Thromboprophylaxis Use in Breast Cancer Surgery: A Meta-Analysis and Systematic Review",
+    "lexical_overlap": 0.5,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0020",
+    "question": "What evidence supports the DASH diet\u2019s effectiveness for weight loss when combined with caloric restriction and exercise?",
+    "expected_information": "A meta\u2011analysis of RCTs shows greater weight loss and BMI reduction over 8\u201324 weeks with DASH plus caloric restriction and exercise, and the ENCORE trial reported ~19 lb loss with DASH plus aerobic exercise and behavioral management, whereas DASH alone produced minimal weight loss.",
+    "relevant_document_ids": [
+      "PMC13075284"
+    ],
+    "relevant_chunk_ids": [
+      "PMC13075284::0023::31b57a27"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "A Narrative Review of Weight Management Strategies: From Lifestyle Interventions to Emerging Pharmacotherapies",
+    "lexical_overlap": 0.818,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0021",
+    "question": "What metabolic disturbance is most likely to occur when citrate metabolism is inhibited and citrate\u2011calcium complexes persist in the systemic circulation during regional citrate anticoagulation for CRRT?",
+    "expected_information": "The answer should state that metabolic acidosis is the expected disturbance when citrate metabolism is inhibited and citrate\u2011calcium complexes accumulate.",
+    "relevant_document_ids": [
+      "PMC10226261"
+    ],
+    "relevant_chunk_ids": [
+      "PMC10226261::0025::187321c6"
+    ],
+    "must_include_terms": [],
+    "category": "adverse_effects",
+    "source_title": "Management of regional citrate anticoagulation for continuous renal replacement therapy: guideline recommendations from Chinese emergency medical doctor consensus",
+    "lexical_overlap": 0.647,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0022",
+    "question": "At what estimated glomerular filtration rate (eGFR) levels should dapagliflozin and empagliflozin be avoided for glucose lowering in older adults with type 2 diabetes?",
+    "expected_information": "Dapagliflozin should not be used when eGFR is below 45 mL/min/1.73 m\u00b2, and empagliflozin should not be used when eGFR is below 30 mL/min/1.73 m\u00b2.",
+    "relevant_document_ids": [
+      "PMC10985780"
+    ],
+    "relevant_chunk_ids": [
+      "PMC10985780::0035::b17eb9b5"
+    ],
+    "must_include_terms": [],
+    "category": "dosage",
+    "source_title": "Guideline for the Management of Diabetes Mellitus in the Elderly in China (2024 Edition)",
+    "lexical_overlap": 0.471,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0023",
+    "question": "What is the main metabolic disturbance that characterizes diabetic ketoacidosis?",
+    "expected_information": "The answer should state that DKA is marked by hyperglycemia accompanied by elevated circulating ketones, resulting in ketoacidosis.",
+    "relevant_document_ids": [
+      "PMC6304293"
+    ],
+    "relevant_chunk_ids": [
+      "PMC6304293::0001::b5c258e6"
+    ],
+    "must_include_terms": [],
+    "category": "diagnosis",
+    "source_title": "Guidelines and controversies in the management of diabetic ketoacidosis \u2013 A mini-review",
+    "lexical_overlap": 0.5,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0024",
+    "question": "What proportion of adult hypertensive patients are estimated to have chronic kidney disease, and how do the 2017 ACC/AHA and 2018 ESH/ESC guidelines differ in their assessment of CKD\u2019s contribution to hypertension?",
+    "expected_information": "The answer should state that 27\u201369% of adult hypertensives have CKD, and that the 2017 ACC/AHA guideline indicates CKD contributes to hypertension in a much smaller fraction\u201415\u2011 to 35\u2011fold less common\u2014while the 2018 ESH/ESC guideline shows a 3\u2011 to 7\u2011fold lower contribution of CKD to hypertension.",
+    "relevant_document_ids": [
+      "PMC6885687"
+    ],
+    "relevant_chunk_ids": [
+      "PMC6885687::0013::c28b54f1"
+    ],
+    "must_include_terms": [],
+    "category": "diagnosis",
+    "source_title": "The chaos of hypertension guidelines for chronic kidney disease patients",
+    "lexical_overlap": 0.727,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0030",
+    "question": "What serum lactate level is used, alongside persistent hypotension requiring vasopressors, to define septic shock according to Sepsis\u20113 guidelines?",
+    "expected_information": "A serum lactate level greater than 2\u202fmmol/L, in the setting of persistent hypotension requiring vasopressors to maintain MAP \u226565\u202fmmHg after adequate fluid resuscitation.",
+    "relevant_document_ids": [
+      "PMC13477727"
+    ],
+    "relevant_chunk_ids": [
+      "PMC13477727::0004::bd1c65cb"
+    ],
+    "must_include_terms": [],
+    "category": "definition",
+    "source_title": "Evolution of Sepsis Management in the Emergency Department: From Early Goal-Directed Therapy to Personalized Resuscitation",
+    "lexical_overlap": 0.625,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0031",
+    "question": "Which three elements did participants rank highest as important for supporting antibiotic stewardship implementation in their hospitals?",
+    "expected_information": "The answer should list a hospital policy with a formal organisational structure, a formal AMS programme accountable for appropriate antibiotic use, and an available multidisciplinary AMS team with multiple staff members.",
+    "relevant_document_ids": [
+      "PMC12104882"
+    ],
+    "relevant_chunk_ids": [
+      "PMC12104882::0018::6a7d31da"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Barriers in implementing antibiotic stewardship programmes at paediatric units in academic hospitals in Thailand: a qualitative study",
+    "lexical_overlap": 0.417,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0034",
+    "question": "What proportion of patients were prescribed SSRIs as a first\u2011line antidepressant at their initial visit and how did that proportion change at the follow\u2011up visit?",
+    "expected_information": "The answer should state that 57.2% (1099/1923) of patients received SSRIs at the first visit, which decreased to 39.2% (753/1923) at the follow\u2011up visit.",
+    "relevant_document_ids": [
+      "PMC10106790"
+    ],
+    "relevant_chunk_ids": [
+      "PMC10106790::0008::e50c3463"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Clinical Guideline (CANMAT 2016) Discordance of Medications for Patients with Major Depressive Disorder in China",
+    "lexical_overlap": 0.571,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0035",
+    "question": "What is the target oxygen saturation level that should be achieved with supplemental oxygen in non\u2011pregnant adults with severe COVID\u201119?",
+    "expected_information": "The target SpO2 should be at least 90% in non\u2011pregnant adults receiving supplemental oxygen.",
+    "relevant_document_ids": [
+      "PMC7151371"
+    ],
+    "relevant_chunk_ids": [
+      "PMC7151371::0015::c03ea34b"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Evidence based management guideline for the COVID-19 pandemic - Review article",
+    "lexical_overlap": 0.769,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0036",
+    "question": "What is the recommended duration of antibiotic therapy for low\u2011severity community\u2011acquired pneumonia in the UK according to the NICE guideline?",
+    "expected_information": "A 5\u2011day course of antibiotics is recommended for low\u2011severity CAP.",
+    "relevant_document_ids": [
+      "PMC4442154"
+    ],
+    "relevant_chunk_ids": [
+      "PMC4442154::0004::fa414371"
+    ],
+    "must_include_terms": [],
+    "category": "dosage",
+    "source_title": "British Thoracic Society community acquired pneumonia guideline and the NICE pneumonia guideline: how they fit together",
+    "lexical_overlap": 0.769,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0037",
+    "question": "How many participants reported both receiving sufficient education and having high self\u2011management self\u2011efficacy for both acute coronary syndrome and diabetes?",
+    "expected_information": "The answer should state that four participants reported both sufficient education and high self\u2011management self\u2011efficacy for ACS and diabetes.",
+    "relevant_document_ids": [
+      "PMC6756451"
+    ],
+    "relevant_chunk_ids": [
+      "PMC6756451::0016::e07deb23"
+    ],
+    "must_include_terms": [],
+    "category": "diagnosis",
+    "source_title": "Preparing Chinese patients with comorbid heart disease and diabetes for home management: a mixed methods study",
+    "lexical_overlap": 0.706,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0039",
+    "question": "What percentage of inflammatory bowel disease cases are diagnosed before age 20, and how does very early\u2011onset IBD differ from typical pediatric IBD in terms of age, genetics, and treatment response?",
+    "expected_information": "The answer should state that about 25% of IBD cases are diagnosed before age 20, and that very early\u2011onset IBD (diagnosed before age 6) is often linked to monogenic mutations, immune dysregulation, and shows treatment resistance, distinguishing it from the broader pediatric IBD population.",
+    "relevant_document_ids": [
+      "PMC12476641"
+    ],
+    "relevant_chunk_ids": [
+      "PMC12476641::0001::0a65b497"
+    ],
+    "must_include_terms": [],
+    "category": "diagnosis",
+    "source_title": "Inflammatory bowel disease in paediatrics: Navigating the old challenges and emerging frontiers",
+    "lexical_overlap": 0.727,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0041",
+    "question": "How does losartan affect plasma renin activity and angiotensin II levels in hypertensive patients?",
+    "expected_information": "Losartan removes angiotensin II negative feedback, leading to a doubling to tripling of plasma renin activity and a consequent rise in angiotensin II plasma concentration.",
+    "relevant_document_ids": [
+      "fda_losartan_potassium"
+    ],
+    "relevant_chunk_ids": [
+      "fda_losartan_potassium::0038::c6eaa3cc"
+    ],
+    "must_include_terms": [],
+    "category": "mechanism",
+    "source_title": "Losartan Potassium \u2014 FDA Prescribing Information",
+    "lexical_overlap": 0.833,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0042",
+    "question": "Which antiplatelet regimen is advised for patients with mild non\u2011cardiogenic stroke or a high\u2011risk transient ischemic attack (ABCD2 score\u202f\u2265\u202f4) during the acute to subacute period?",
+    "expected_information": "Dual antiplatelet therapy with aspirin plus clopidogrel is recommended for mild non\u2011cardiogenic stroke and high\u2011risk TIA within about one month of onset.",
+    "relevant_document_ids": [
+      "PMC11620829"
+    ],
+    "relevant_chunk_ids": [
+      "PMC11620829::0011::f03692c4"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Medical Management of Acute Stroke based on Japan Stroke Society Guidelines and the Japan Stroke Data Bank",
+    "lexical_overlap": 0.7,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0043",
+    "question": "What is the dosing frequency of vericiguat in heart failure patients and why is this schedule possible?",
+    "expected_information": "Vericiguat is administered once daily because it has a relatively long half\u2011life due to reduced susceptibility to oxidative metabolism.",
+    "relevant_document_ids": [
+      "PMC9789902"
+    ],
+    "relevant_chunk_ids": [
+      "PMC9789902::0002::da1bf137"
+    ],
+    "must_include_terms": [],
+    "category": "dosage",
+    "source_title": "Vericiguat: A New Hope for Heart Failure Patients",
+    "lexical_overlap": 0.556,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0044",
+    "question": "What was the most common risk factor among heart failure patients in both the heart failure clinic and the general cardiology outpatient department, and what were its respective prevalence percentages?",
+    "expected_information": "The answer should state that diabetes mellitus was the most common risk factor, occurring in 60% of patients in the heart failure clinic and 65% in the general cardiology outpatient department.",
+    "relevant_document_ids": [
+      "PMC7445219"
+    ],
+    "relevant_chunk_ids": [
+      "PMC7445219::0006::2440a23c"
+    ],
+    "must_include_terms": [],
+    "category": "risk_factors",
+    "source_title": "Guideline-directed medical therapy in heart failure patients: impact of focused care provided by a heart failure clinic in comparison to general cardiology out-patient department",
+    "lexical_overlap": 0.471,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0045",
+    "question": "What proportion of non\u2011tuberculous mycobacterial pulmonary disease cases in Japan are caused by the Mycobacterium avium\u2011intracellulare complex?",
+    "expected_information": "MAC accounts for nearly 90% of all NTM\u2011PD cases in Japan.",
+    "relevant_document_ids": [
+      "PMC8601257"
+    ],
+    "relevant_chunk_ids": [
+      "PMC8601257::0001::acc8d68d"
+    ],
+    "must_include_terms": [],
+    "category": "definition",
+    "source_title": "Case Report: Kampo Medicine for Non-tuberculous Mycobacterium Pulmonary Disease",
+    "lexical_overlap": 0.769,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0046",
+    "question": "What types of digital therapeutics tools are currently being explored for managing migraine?",
+    "expected_information": "The answer should mention digital migraine self\u2011management tools, online migraine diagnosis, guideline\u2011based treatment options, digitally networked patient communities, and digital cognitive\u2011behavioural therapy.",
+    "relevant_document_ids": [
+      "PMC9842514"
+    ],
+    "relevant_chunk_ids": [
+      "PMC9842514::0000::a332af7d"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Digital Therapeutics in Migraine Management: A Novel Treatment Option in the COVID-19 Era",
+    "lexical_overlap": 0.444,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0049",
+    "question": "What key gaps in current guidelines for managing major depressive disorder with suicidal behavior in adults under 65 does the consensus highlight?",
+    "expected_information": "The answer should state that guidelines lack clear recommendations for assessing and managing MDSB, lack an integrated biopsychosocial approach, and provide no treatment options that can rapidly reduce suicidal behavior, especially in Southeast Asia.",
+    "relevant_document_ids": [
+      "PMC9306096"
+    ],
+    "relevant_chunk_ids": [
+      "PMC9306096::0002::a1e0e999"
+    ],
+    "must_include_terms": [],
+    "category": "definition",
+    "source_title": "A Southeast Asian expert consensus on the management of major depressive disorder with suicidal behavior in adults under 65\u2009years of age",
+    "lexical_overlap": 0.312,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0051",
+    "question": "What is the recommended levothyroxine dosage for premature neonates weighing less than 1,000 grams and less than 28 weeks gestation?",
+    "expected_information": "The dosage is 4\u202f\u00b5g per kilogram of body weight.",
+    "relevant_document_ids": [
+      "PMC8551794"
+    ],
+    "relevant_chunk_ids": [
+      "PMC8551794::0005::99f1f249"
+    ],
+    "must_include_terms": [],
+    "category": "dosage",
+    "source_title": "Guideline for the Treatment of Hypothyroidism in Prematurity",
+    "lexical_overlap": 0.714,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0052",
+    "question": "What changes did the nutritionists recommend for the anemia management guideline to better support their role and improve patient care during the pandemic?",
+    "expected_information": "The answer should state that nutritionists suggested the guideline explicitly require nutrition services for all children, create dedicated nutrition teams for children and adults, reduce administrative duties for nutritionists, and improve monitoring methods beyond single\u2011day assessments, as well as enhance remote follow\u2011up and virtual counseling.",
+    "relevant_document_ids": [
+      "PMC11397691"
+    ],
+    "relevant_chunk_ids": [
+      "PMC11397691::0018::bae67308"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Perceptions and experiences of healthcare professionals on the guideline of management and treatment of anemia among children under 3 years of age during the COVID-19 pandemic",
+    "lexical_overlap": 0.2,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0053",
+    "question": "What is the estimated global prevalence range of chronic kidney disease and how many people does this affect worldwide?",
+    "expected_information": "The prevalence of CKD is 11%\u201313%, affecting approximately 844 million people globally.",
+    "relevant_document_ids": [
+      "PMC11984408"
+    ],
+    "relevant_chunk_ids": [
+      "PMC11984408::0001::9b7c9c84"
+    ],
+    "must_include_terms": [],
+    "category": "definition",
+    "source_title": "Artificial intelligence in chronic kidney disease management: a scoping review",
+    "lexical_overlap": 0.692,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0054",
+    "question": "What evidence exists that oral magnesium supplementation improves depressive symptoms in adults?",
+    "expected_information": "A correct answer should mention that several randomized studies (e.g., Rajizadeh et al., 8\u2011week magnesium oxide; Tarleton et al., 6\u2011week 248\u202fmg daily) reported significant reductions in depression scales such as BDI\u2011II, PHQ\u20119, and HDRS compared with placebo or control groups.",
+    "relevant_document_ids": [
+      "PMC12252419"
+    ],
+    "relevant_chunk_ids": [
+      "PMC12252419::0006::4df6d5b9"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "The Role of Magnesium in Depression, Migraine, Alzheimer\u2019s Disease, and Cognitive Health: A Comprehensive Review",
+    "lexical_overlap": 0.667,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0055",
+    "question": "How does race influence the likelihood of receiving opioid prescriptions in the emergency department after adjusting for ICD\u20119 diagnosis codes?",
+    "expected_information": "The answer should state that after controlling for diagnosis, black and Asian patients have lower odds of receiving opioids, while Latino patients show no difference compared to white patients.",
+    "relevant_document_ids": [
+      "PMC8344207"
+    ],
+    "relevant_chunk_ids": [
+      "PMC8344207::0014::43801427"
+    ],
+    "must_include_terms": [],
+    "category": "risk_factors",
+    "source_title": "Provider Bias in prescribing opioid analgesics: a study of electronic medical Records at a Hospital Emergency Department",
+    "lexical_overlap": 0.5,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0056",
+    "question": "What are the key characteristics that make chronic kidney disease management programs for Indigenous peoples in Australia, New\u202fZealand and Canada both effective and acceptable to participants?",
+    "expected_information": "The answer should list that effective and acceptable programs are integrated within existing services, nurse\u2011led, involve intensive follow\u2011up, provide culturally\u2011appropriate education, have governance structures supporting community ownership, use robust clinical systems for communication, and give a central role to Indigenous Health Workers.",
+    "relevant_document_ids": [
+      "PMC4822249"
+    ],
+    "relevant_chunk_ids": [
+      "PMC4822249::0000::cb15f160"
+    ],
+    "must_include_terms": [],
+    "category": "definition",
+    "source_title": "Effectiveness, cost effectiveness, acceptability and implementation barriers/enablers of chronic kidney disease management programs for Indigenous people in Australia, New Zealand and Canada: a systematic review of mixed evidence",
+    "lexical_overlap": 0.722,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0057",
+    "question": "When should a dose adjustment of apixaban be recommended for a nonvalvular atrial fibrillation patient?",
+    "expected_information": "A dose adjustment is recommended only if the patient has at least two of the following: age \u226580 years, body weight \u226460\u202fkg, or serum creatinine \u22651.5\u202fmg/dL; otherwise no adjustment is needed.",
+    "relevant_document_ids": [
+      "fda_apixaban"
+    ],
+    "relevant_chunk_ids": [
+      "fda_apixaban::0042::dfcefae3"
+    ],
+    "must_include_terms": [],
+    "category": "dosage",
+    "source_title": "Apixaban \u2014 FDA Prescribing Information",
+    "lexical_overlap": 0.889,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0058",
+    "question": "What were the three specific aims of the Society of Anesthesia and Sleep Medicine guideline on intraoperative management of adult patients with obstructive sleep apnea?",
+    "expected_information": "The answer must list the three aims: (1) evaluate considerations of difficult airway management in OSA patients, (2) assess the impact of individual anesthesia-related drugs and agents in OSA care, and (3) evaluate best anesthetic techniques for this population.",
+    "relevant_document_ids": [
+      "PMC6135479"
+    ],
+    "relevant_chunk_ids": [
+      "PMC6135479::0003::883897f6"
+    ],
+    "must_include_terms": [],
+    "category": "definition",
+    "source_title": "Society of Anesthesia and Sleep Medicine Guideline on Intraoperative Management of Adult Patients With Obstructive Sleep Apnea",
+    "lexical_overlap": 0.643,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0059",
+    "question": "What proportion of chronic migraine patients achieved at least a 30% reduction in headache days after the first cycle of onabotulinumtoxinA, and how does its safety profile compare to placebo?",
+    "expected_information": "A correct answer should state that 71.4% of patients responded after the first cycle and that onabotulinumtoxinA was well tolerated, with common adverse events such as neck pain, muscular weakness, eyelid ptosis, and injection\u2011site pain occurring more frequently than in placebo, but with low discontinuation rates.",
+    "relevant_document_ids": [
+      "PMC6755553"
+    ],
+    "relevant_chunk_ids": [
+      "PMC6755553::0006::0b43386e"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Guideline on the use of onabotulinumtoxinA in chronic migraine: a consensus statement from the European Headache Federation",
+    "lexical_overlap": 0.55,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0060",
+    "question": "How did the patient's blood pH and bicarbonate levels change during and after hemodialysis treatment for diabetic ketoacidosis?",
+    "expected_information": "The answer should state that the pH rose from 6.89 at admission to 7.47 after 48 hours of hemodialysis, while bicarbonate increased from 2.0\u202fmmol/L initially to 27.7\u202fmmol/L at the same time point.",
+    "relevant_document_ids": [
+      "PMC7330143"
+    ],
+    "relevant_chunk_ids": [
+      "PMC7330143::0005::096a1c01"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Acute mountain sickness induced diabetic ketoacidosis managed with hemodialysis: A case report",
+    "lexical_overlap": 0.214,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0061",
+    "question": "When should a postmenopausal woman with osteoporosis be referred to an osteoporosis specialist for possible parenteral treatment?",
+    "expected_information": "Referral is indicated for very high\u2011risk patients such as those with a recent vertebral fracture (within 2 years), two or more vertebral fractures, a BMD T\u2011score \u2264\u20113.5, high\u2011dose glucocorticoid use (\u22657.5\u202fmg/day of prednisolone or equivalent for \u22653 months), multiple clinical risk factors with a recent fragility fracture, or other markers of very high fracture risk.",
+    "relevant_document_ids": [
+      "PMC8979902"
+    ],
+    "relevant_chunk_ids": [
+      "PMC8979902::0094::f98f08b2"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "UK clinical guideline for the prevention and treatment of osteoporosis",
+    "lexical_overlap": 0.444,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0064",
+    "question": "What type of psychological therapy is highlighted as potentially suitable for older adults with treatment\u2011resistant generalized anxiety disorder and why?",
+    "expected_information": "The answer should state that Acceptance and Commitment Therapy (ACT) is considered suitable because it focuses on increasing personally meaningful behaviour in the presence of distress rather than solely reducing symptoms.",
+    "relevant_document_ids": [
+      "PMC12998016"
+    ],
+    "relevant_chunk_ids": [
+      "PMC12998016::0001::882739a4"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "A randomised controlled trial of Acceptance and Commitment Therapy plus usual care in comparison to usual care alone for reducing anxiety in older people with treatment-resistant generalised anxiety disorder (CONTACT-GAD): trial protocol",
+    "lexical_overlap": 0.571,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0066",
+    "question": "Which statistical model was applied in the meta\u2011analysis when the heterogeneity among studies exceeded 50%?",
+    "expected_information": "The random\u2011effects model was used when I\u00b2 was greater than 50%.",
+    "relevant_document_ids": [
+      "PMC11458002"
+    ],
+    "relevant_chunk_ids": [
+      "PMC11458002::0015::0deeba2d"
+    ],
+    "must_include_terms": [],
+    "category": "definition",
+    "source_title": "Determinants of COVID-19 vaccine acceptance and hesitancy among adolescents and youths aged 10-35 years in sub-Saharan African countries: A systematic review and meta-analysis",
+    "lexical_overlap": 0.8,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0067",
+    "question": "What statistical criterion was used to determine non\u2011inferiority of the Pulmojet compared with the Diskus or Turbohaler in terms of serious inhaler technique errors?",
+    "expected_information": "The lower bound of the 95\u202f% confidence interval for the difference in proportions of patients with no serious errors must be greater than \u20130.10.",
+    "relevant_document_ids": [
+      "PMC4712500"
+    ],
+    "relevant_chunk_ids": [
+      "PMC4712500::0011::0ee18c84"
+    ],
+    "must_include_terms": [],
+    "category": "statistical_methods",
+    "source_title": "Comparison of serious inhaler technique errors made by device-na\u00efve patients using three different dry powder inhalers: a randomised, crossover, open-label study",
+    "lexical_overlap": 0.8,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0069",
+    "question": "Does the recommended clinical dose of montelukast alter the pharmacokinetics of warfarin or its effect on prothrombin time/INR?",
+    "expected_information": "The answer must state that montelukast at the recommended dose does not change warfarin\u2019s plasma concentrations or influence its effect on prothrombin time or INR.",
+    "relevant_document_ids": [
+      "fda_montelukast_sodium"
+    ],
+    "relevant_chunk_ids": [
+      "fda_montelukast_sodium::0034::dd793383"
+    ],
+    "must_include_terms": [],
+    "category": "adverse_effects",
+    "source_title": "Montelukast Sodium \u2014 FDA Prescribing Information",
+    "lexical_overlap": 0.917,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0070",
+    "question": "What percentage of the evaluated headache guidelines recommended acupuncture for migraine treatment?",
+    "expected_information": "The answer should state that 40.0% of the 25 guidelines (10 out of 25) recommended acupuncture.",
+    "relevant_document_ids": [
+      "PMC12578527"
+    ],
+    "relevant_chunk_ids": [
+      "PMC12578527::0000::13864bb9"
+    ],
+    "must_include_terms": [],
+    "category": "recommendation",
+    "source_title": "Acupuncture recommendations for migraine in headache treatment guidelines: a systematic review",
+    "lexical_overlap": 0.875,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0073",
+    "question": "What proportion of patients with chronic kidney disease and increased albuminuria are reported to receive a renin\u2013angiotensin system inhibitor, and how often are these patients given the maximum tolerated dose?",
+    "expected_information": "The answer should state that 44\u201381% of CKD patients with albuminuria receive RASi, and among those, only 19\u201326% are on the maximum tolerated dose while 58\u201365% are on suboptimal doses.",
+    "relevant_document_ids": [
+      "PMC12182529"
+    ],
+    "relevant_chunk_ids": [
+      "PMC12182529::0008::08c77faa"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Guideline-Recommended Disease-Modifying Therapies for Patients with Cardiorenal Disease: A Call-to-Action Narrative Review",
+    "lexical_overlap": 0.421,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0074",
+    "question": "Which specific adverse effects are monitored when evaluating the safety of transcranial magnetic stimulation in patients with major depressive disorder?",
+    "expected_information": "A list of adverse effects including lightheadedness, hearing problems, mild headaches, tingling sensation in the face, jaw or scalp, facial twitching, and scalp sensations.",
+    "relevant_document_ids": [
+      "PMC10729247"
+    ],
+    "relevant_chunk_ids": [
+      "PMC10729247::0007::e9d0583d"
+    ],
+    "must_include_terms": [],
+    "category": "adverse_effects",
+    "source_title": "Comparing the efficacies of transcranial magnetic stimulation treatments using different targeting methods in major depressive disorder: protocol for a network meta-analysis",
+    "lexical_overlap": 0.231,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0075",
+    "question": "What is the primary goal of the new acupuncture guideline for chronic non\u2011specific low back pain?",
+    "expected_information": "The guideline aims to give clinicians standardized, operable acupuncture treatment plans and promote standardization of acupuncture for CNLBP.",
+    "relevant_document_ids": [
+      "PMC13381246"
+    ],
+    "relevant_chunk_ids": [
+      "PMC13381246::0000::01862bcb"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Protocol for a clinical practice guideline on acupuncture for chronic non-specific low back pain",
+    "lexical_overlap": 0.727,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0077",
+    "question": "What are the main indications for prescribing rosuvastatin tablets in adults and children with various lipid disorders?",
+    "expected_information": "The answer should state that rosuvastatin is indicated to lower LDL\u2011C and reduce cardiovascular events in adults without known heart disease but with risk factors, to lower LDL\u2011C in adults with primary hyperlipidemia, to treat adults and children 8+ with heterozygous familial hypercholesterolemia, to treat adults and children 7+ with homozygous familial hypercholesterolemia when other treatments are unavailable, and to treat adults with primary dysbetalipoproteinemia or hypertriglyceridemia.",
+    "relevant_document_ids": [
+      "fda_rosuvastatin_calcium"
+    ],
+    "relevant_chunk_ids": [
+      "fda_rosuvastatin_calcium::0063::e61ece1e"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Rosuvastatin Calcium \u2014 FDA Prescribing Information",
+    "lexical_overlap": 0.4,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0078",
+    "question": "What is the recommended starting dose of prednisone for front\u2011line treatment of chronic graft\u2011versus\u2011host disease and what is the expected time frame for achieving a partial response?",
+    "expected_information": "The answer should state that prednisone should be started at 0.5 to 1\u202fmg/kg/day and that a partial response is expected within 2\u20134 weeks.",
+    "relevant_document_ids": [
+      "PMC10968999"
+    ],
+    "relevant_chunk_ids": [
+      "PMC10968999::0012::9ccb8a5b"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Cell Therapy Transplant Canada (CTTC) Consensus-Based Guideline 2024 for Management and Treatment of Chronic Graft-Versus-Host Disease and Future Directions for Development",
+    "lexical_overlap": 0.556,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0080",
+    "question": "How does escitalopram pharmacokinetics differ in patients aged 65 and older compared to younger adults?",
+    "expected_information": "AUC and half\u2011life are about 50% higher in elderly patients, while Cmax remains unchanged.",
+    "relevant_document_ids": [
+      "fda_escitalopram_oral"
+    ],
+    "relevant_chunk_ids": [
+      "fda_escitalopram_oral::0041::88f8ffa5"
+    ],
+    "must_include_terms": [],
+    "category": "pharmacokinetics",
+    "source_title": "Escitalopram Oral (Escitalopram Oral Solution) \u2014 FDA Prescribing Information",
+    "lexical_overlap": 0.5,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0081",
+    "question": "How does the gut microbiota influence the effectiveness and safety of antidiabetic medications?",
+    "expected_information": "The answer should explain that gut microbes can alter drug bioactivity, bioavailability, or toxicity, and that antidiabetic drugs can change the composition and function of the microbiota, leading to variations in drug efficacy and safety.",
+    "relevant_document_ids": [
+      "PMC9194476"
+    ],
+    "relevant_chunk_ids": [
+      "PMC9194476::0001::d0464102"
+    ],
+    "must_include_terms": [],
+    "category": "mechanism",
+    "source_title": "Gut Microbiota and Antidiabetic Drugs: Perspectives of Personalized Treatment in Type 2 Diabetes Mellitus",
+    "lexical_overlap": 0.556,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0082",
+    "question": "Does renal impairment affect the relative benefit of rivaroxaban compared with standard antiplatelet therapy for preventing major cardiovascular events in patients with acute coronary syndrome?",
+    "expected_information": "A correct answer should state that the ATLAS ACS 2 TIMI 51 trial found no significant difference in the relative efficacy of rivaroxaban versus standard antiplatelet therapy between patients with CrCl \u226550\u202fmL/min and those with CrCl <50\u202fmL/min, with hazard ratios of 0.84 and 0.88 respectively and a non\u2011significant interaction (P\u202f=\u202f0.82).",
+    "relevant_document_ids": [
+      "PMC4337714"
+    ],
+    "relevant_chunk_ids": [
+      "PMC4337714::0016::d2050772"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Antithrombotic therapy for long-term secondary prevention of acute coronary syndrome in high-risk patients",
+    "lexical_overlap": 0.474,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0083",
+    "question": "Does following the ATS/IDSA guidelines for community\u2011acquired pneumonia reduce in\u2011hospital mortality in hospitalized patients?",
+    "expected_information": "The answer should state that guideline\u2011concordant therapy is associated with a mortality benefit, but the evidence is of very low certainty and affected by heterogeneity.",
+    "relevant_document_ids": [
+      "PMC11222985"
+    ],
+    "relevant_chunk_ids": [
+      "PMC11222985::0020::6e4e6300"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Guideline-Concordant Therapy for Community-Acquired Pneumonia in the Hospitalized Population: A Systematic Review and Meta-analysis",
+    "lexical_overlap": 0.385,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0084",
+    "question": "What is the current evidence regarding Tai\u202fChi\u2019s impact on bone mineral density in postmenopausal women with osteoporosis?",
+    "expected_information": "A summary that systematic reviews show mixed or weak evidence for Tai\u202fChi improving bone mineral density in perimenopausal and postmenopausal women, with some reviews finding benefits and others finding the evidence unconvincing.",
+    "relevant_document_ids": [
+      "PMC7478652"
+    ],
+    "relevant_chunk_ids": [
+      "PMC7478652::0001::ac4e8643"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Tai Chi on bone mineral density of postmenopausal osteoporosis",
+    "lexical_overlap": 0.75,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0085",
+    "question": "What neurochemical imbalance is commonly observed in patients with generalized anxiety disorder that may lead to increased amygdala activity and difficulty relaxing after stress?",
+    "expected_information": "The answer should state that patients with GAD have reduced GABA levels, which is associated with increased amygdala activity and impaired relaxation after stress.",
+    "relevant_document_ids": [
+      "PMC10612137"
+    ],
+    "relevant_chunk_ids": [
+      "PMC10612137::0003::169a24ff"
+    ],
+    "must_include_terms": [],
+    "category": "mechanism",
+    "source_title": "A Comprehensive Review of the Generalized Anxiety Disorder",
+    "lexical_overlap": 0.588,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0086",
+    "question": "What proportion of rheumatoid arthritis patients do not experience a relapse within one year after discontinuing small molecule targeted synthetic disease\u2011modifying antirheumatic drugs?",
+    "expected_information": "The answer should state that 37% of patients did not relapse within one year after stopping the medication.",
+    "relevant_document_ids": [
+      "PMC9524773"
+    ],
+    "relevant_chunk_ids": [
+      "PMC9524773::0014::7ba564ac"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "2018 Chinese Guidelines for the Diagnosis and Treatment of Rheumatoid Arthritis",
+    "lexical_overlap": 0.571,
+    "unanswerable": false
+  },
+  {
+    "question_id": "syn_0087",
+    "question": "What impact does early referral to physical therapy have on subsequent health\u2011care utilization and overall costs for patients with low back pain?",
+    "expected_information": "Early referral to physical therapy is associated with significant reductions in subsequent health\u2011care utilization and overall costs of care.",
+    "relevant_document_ids": [
+      "PMC4393575"
+    ],
+    "relevant_chunk_ids": [
+      "PMC4393575::0021::9e861682"
+    ],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": "Implications of early and guideline adherent physical therapy for low back pain on utilization and costs",
+    "lexical_overlap": 0.75,
+    "unanswerable": false
+  },
+  {
+    "question_id": "cur_0000",
+    "question": "What are the recommended first-line treatments for hypertension?",
+    "expected_information": "First-line antihypertensive drug classes and when they are used.",
+    "relevant_document_ids": [],
+    "relevant_chunk_ids": [],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": null,
+    "lexical_overlap": 0.0,
+    "unanswerable": false
+  },
+  {
+    "question_id": "cur_0001",
+    "question": "Which medications are used as first-line therapy for type 2 diabetes?",
+    "expected_information": "Initial pharmacological therapy for type 2 diabetes.",
+    "relevant_document_ids": [],
+    "relevant_chunk_ids": [],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": null,
+    "lexical_overlap": 0.0,
+    "unanswerable": false
+  },
+  {
+    "question_id": "cur_0002",
+    "question": "What are the main contraindications for ACE inhibitors?",
+    "expected_information": "Situations in which ACE inhibitors must not be used.",
+    "relevant_document_ids": [],
+    "relevant_chunk_ids": [],
+    "must_include_terms": [],
+    "category": "contraindications",
+    "source_title": null,
+    "lexical_overlap": 0.0,
+    "unanswerable": false
+  },
+  {
+    "question_id": "cur_0003",
+    "question": "What are the most common adverse reactions associated with amlodipine?",
+    "expected_information": "Adverse reactions reported for amlodipine.",
+    "relevant_document_ids": [],
+    "relevant_chunk_ids": [],
+    "must_include_terms": [],
+    "category": "adverse_effects",
+    "source_title": null,
+    "lexical_overlap": 0.0,
+    "unanswerable": false
+  },
+  {
+    "question_id": "cur_0004",
+    "question": "How is sepsis defined and what are the early management priorities?",
+    "expected_information": "Definition of sepsis and initial resuscitation steps.",
+    "relevant_document_ids": [],
+    "relevant_chunk_ids": [],
+    "must_include_terms": [],
+    "category": "definition",
+    "source_title": null,
+    "lexical_overlap": 0.0,
+    "unanswerable": false
+  },
+  {
+    "question_id": "cur_0005",
+    "question": "What are the major risk factors for chronic kidney disease?",
+    "expected_information": "Conditions and exposures that increase CKD risk.",
+    "relevant_document_ids": [],
+    "relevant_chunk_ids": [],
+    "must_include_terms": [],
+    "category": "risk_factors",
+    "source_title": null,
+    "lexical_overlap": 0.0,
+    "unanswerable": false
+  },
+  {
+    "question_id": "cur_0006",
+    "question": "What is the mechanism of action of SGLT2 inhibitors?",
+    "expected_information": "How SGLT2 inhibitors lower glucose.",
+    "relevant_document_ids": [],
+    "relevant_chunk_ids": [],
+    "must_include_terms": [],
+    "category": "mechanism",
+    "source_title": null,
+    "lexical_overlap": 0.0,
+    "unanswerable": false
+  },
+  {
+    "question_id": "cur_0007",
+    "question": "Which anticoagulants are recommended for stroke prevention in atrial fibrillation?",
+    "expected_information": "Anticoagulant options for AF stroke prevention.",
+    "relevant_document_ids": [],
+    "relevant_chunk_ids": [],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": null,
+    "lexical_overlap": 0.0,
+    "unanswerable": false
+  },
+  {
+    "question_id": "cur_0008",
+    "question": "What inhaled therapies are used for long-term asthma control?",
+    "expected_information": "Controller inhaler classes for asthma.",
+    "relevant_document_ids": [],
+    "relevant_chunk_ids": [],
+    "must_include_terms": [],
+    "category": "treatment",
+    "source_title": null,
+    "lexical_overlap": 0.0,
+    "unanswerable": false
+  },
+  {
+    "question_id": "cur_0009",
+    "question": "What is the recommended dosing of lisinopril for hypertension?",
+    "expected_information": "Starting and maintenance dosing for lisinopril.",
+    "relevant_document_ids": [],
+    "relevant_chunk_ids": [],
+    "must_include_terms": [],
+    "category": "dosage",
+    "source_title": null,
+    "lexical_overlap": 0.0,
+    "unanswerable": false
+  },
+  {
+    "question_id": "cur_0010",
+    "question": "What is the current stock price of Pfizer?",
+    "expected_information": "Not present in a clinical corpus; the system must refuse.",
+    "relevant_document_ids": [],
+    "relevant_chunk_ids": [],
+    "must_include_terms": [],
+    "category": "out_of_scope",
+    "source_title": null,
+    "lexical_overlap": 0.0,
+    "unanswerable": true
+  },
+  {
+    "question_id": "cur_0011",
+    "question": "What did the 2027 WHO guideline recommend for treating Martian fever?",
+    "expected_information": "A fabricated condition and future guideline; the system must refuse.",
+    "relevant_document_ids": [],
+    "relevant_chunk_ids": [],
+    "must_include_terms": [],
+    "category": "out_of_scope",
+    "source_title": null,
+    "lexical_overlap": 0.0,
+    "unanswerable": true
+  },
+  {
+    "question_id": "cur_0012",
+    "question": "How many patients were enrolled in the ACME-9000 trial of zolpidextrin?",
+    "expected_information": "A fabricated drug and trial; the system must refuse.",
+    "relevant_document_ids": [],
+    "relevant_chunk_ids": [],
+    "must_include_terms": [],
+    "category": "out_of_scope",
+    "source_title": null,
+    "lexical_overlap": 0.0,
+    "unanswerable": true
+  }
+]

@@ -1,0 +1,83 @@
+# Full stack: Qdrant + FastAPI + Streamlit.
+#
+#   docker compose up --build
+#   docker compose --profile setup run --rm ingest   # one-off corpus build
+#
+# data/ is bind-mounted so the corpus and indexes survive container rebuilds
+# and are shared between the API and the ingest job.
+
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.12.1
+    container_name: hcrag-qdrant
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_storage:/qdrant/storage
+    healthcheck:
+      # The Qdrant image is distroless, so probe from outside with a TCP check.
+      test: ["CMD-SHELL", "exec 3<>/dev/tcp/127.0.0.1/6333 || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: .
+      target: runtime
+    container_name: hcrag-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      # Inside the compose network Qdrant is reachable by service name.
+      QDRANT_URL: http://qdrant:6333
+      EMBEDDING_DEVICE: cpu
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      qdrant:
+        condition: service_healthy
+    restart: unless-stopped
+
+  ui:
+    build:
+      context: .
+      target: runtime
+    container_name: hcrag-ui
+    command: >
+      streamlit run frontend/app.py
+      --server.port 8501
+      --server.address 0.0.0.0
+      --server.headless true
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    environment:
+      API_BASE_URL: http://api:8000
+      EMBEDDING_DEVICE: cpu
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  # One-shot corpus download + index build. Not started by `up`.
+  ingest:
+    build:
+      context: .
+      target: runtime
+    profiles: ["setup"]
+    env_file:
+      - .env
+    environment:
+      EMBEDDING_DEVICE: cpu
+    volumes:
+      - ./data:/app/data
+    command: ["sh", "-c", "python -m src.cli ingest && python -m src.cli index"]
+
+volumes:
+  qdrant_storage:

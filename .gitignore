@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.DS_Store
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+
+# Data artifacts - regenerate with `hcrag ingest` / `hcrag index`
+data/raw/*
+data/processed/*
+data/indexes/*
+data/metadata/*
+!data/**/.gitkeep
+
+# Keep the hand-written evaluation set under version control
+!data/evaluation/
+data/evaluation/results/
+
+.cache/
+qdrant_storage/
