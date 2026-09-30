@@ -1,106 +1,200 @@
-# Healthcare RAG Intelligence Platform
-
 <p align="center">
-  <img alt="Python 3.11" src="https://img.shields.io/badge/python-3.11-3776AB?logo=python&logoColor=white">
-  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white">
-  <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white">
-  <img alt="FAISS" src="https://img.shields.io/badge/FAISS-012169?logo=meta&logoColor=white">
-  <img alt="Groq" src="https://img.shields.io/badge/LLM-Groq%20gpt--oss--120b-F55036">
+  <img alt="Python 3.11" src="https://img.shields.io/badge/python-3.11-0b6e8a?logo=python&logoColor=white">
+  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-0b6e8a?logo=fastapi&logoColor=white">
+  <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-0b6e8a?logo=streamlit&logoColor=white">
+  <img alt="Tests" src="https://img.shields.io/badge/tests-95%20passing-2f7d4f">
 </p>
 
-Ask a clinical question. Get an answer written **only from retrieved papers and drug labels**, with the document, page, and section next to every claim. If the library does not contain the answer, the system says so.
+# Healthcare RAG
+
+### An AI that answers medical questions only from real sources, and shows where every claim came from
 
 <p align="center">
-  <img src="docs/images/ask.png" alt="Grounded answer with citations for a hypertension question" width="100%">
+  <a href="#what-is-this">What is this?</a> ·
+  <a href="#what-it-found">What it found</a> ·
+  <a href="#the-app">The app</a> ·
+  <a href="#metrics-on-the-dashboard">Metrics</a> ·
+  <a href="#how-it-works">How it works</a> ·
+  <a href="#run-it">Run it</a> ·
+  <a href="#for-technical-reviewers">Technical details</a>
 </p>
 
-| | |
-|---|---|
-| **Corpus** | 289 PubMed Central papers and FDA drug labels, 8,754 chunks |
-| **Retrieval** | Vector, BM25, hybrid (reciprocal rank fusion), cross-encoder rerank |
-| **Best setting** | Hybrid + reranker · MRR **0.965** · Recall@1 **94.7%** on the low-leakage slice |
-| **Answer quality** | Faithfulness **0.91** · citation accuracy **1.0** · about **1.6s** per question |
+## What is this?
 
-<details>
-<summary><b>Corpus browser</b> — what is actually indexed</summary>
-<p align="center">
-  <img src="docs/images/corpus.png" alt="Corpus tab showing 289 documents and 8754 chunks" width="100%">
-</p>
-</details>
+**Ask a medical question and get an answer written only from a library of real research papers and FDA drug
+labels, with the exact document, page and section next to every claim. If the library doesn't contain the answer,
+it is built to say so instead of guessing.**
 
-<details>
-<summary><b>Evaluation dashboard</b> — vector vs BM25 vs hybrid vs hybrid + reranker</summary>
-<p align="center">
-  <img src="docs/images/evaluation.png" alt="Evaluation chart where hybrid plus reranker leads on MRR" width="100%">
-</p>
-</details>
+General AI chatbots can sound confident while making things up, and they rarely show where an answer came from.
+In medicine that's a problem: a doctor, pharmacist or researcher needs to *check* a claim before trusting it.
+This project is a "retrieval-augmented generation" (RAG) system, which means it works in two steps:
 
-```
-Q: What are the recommended first-line treatments for hypertension?
+1. **Find:** search a fixed library for the passages most relevant to the question.
+2. **Answer:** have an AI write the answer using *only* those passages, citing each one by number.
 
-A: - The WHO Essential Medicines List identifies ACE inhibitors, calcium-channel
-     blockers, angiotensin-receptor blockers, and thiazide diuretics as medicines
-     for the pharmacological management of hypertension [3].
-   - Guideline-recommended initial regimens often use dual therapy, for example an
-     ACE inhibitor combined with a thiazide diuretic [1].
+The library is **289 documents**: 265 open-access research papers from PubMed Central and 24 official FDA drug
+labels, covering about 30 conditions and split into **8,754 short passages**.
 
-Sources
-  [1] Retrospective comparison of ChatGPT-4 treatment recommendations…  p.1  Abstract
-  [3] Hypertension Pharmacological Treatment in Adults: A WHO Guideline  p.8  Body
-
-hybrid+rerank · confidence 0.94 · retrieval 0.04s · rerank 0.14s · generation 0.92s
-```
-
-The point of the project isn't that it answers questions — it's that every design choice is **measured** rather than assumed: three retrieval strategies compared head to head, four chunk sizes swept, and hallucination tracked explicitly through refusal rate and citation accuracy.
+> **Not medical advice.** It's a tool for exploring the literature. An AI can still misread a passage, so every
+> answer ships with its sources to check against.
 
 ---
 
-## Architecture
+## What it found
+
+- **It almost always finds the right source.** On fair test questions, it ranks the correct source first **95%**
+  of the time.
+- **Its answers stick to the sources.** A separate AI judge rated **91%** of what it writes as supported by the
+  cited passages, and **100%** of its citations pointed to a passage it really retrieved (checked automatically,
+  not judged). No invented references.
+- **It's fast and free to run.** A typical answer takes about **1.6 seconds**, on a free AI tier.
+- **Combining two search methods works best.** Searching by *meaning* and by *keywords*, then re-checking the top
+  results, beat either method alone.
+- **The first test was fooled, and catching it is the most interesting result.** At first, plain keyword search
+  looked best, with a perfect score. That's suspicious. The cause: the test questions had been written by an AI
+  *from* the answer passages, so many copied their exact words, and keyword search simply matched them. On the
+  **fair** questions that don't copy the wording, keyword search's lead disappears and the combined method wins,
+  as the design predicted.
+
+---
+
+## The app
+
+Three tabs, each opening with a plain-English explanation. The technical search settings are tucked into an
+**Advanced settings** panel so the question box comes first.
+
+### Ask a question
+
+Pick an example or type a question. The answer comes with numbered citations, and each source opens to show the
+exact passage, its page and section, and a link to the original.
+
+<p align="center">
+  <img src="docs/images/ask.png" alt="A cited answer to 'What are the recommended first-line treatments for hypertension?' with its sources" width="100%">
+</p>
+
+### What's in the library
+
+Everything the answers can come from: 265 research papers and 24 FDA drug labels, searchable by title.
+
+<p align="center">
+  <img src="docs/images/corpus.png" alt="The library: 289 documents, 265 research papers, 24 FDA drug labels, 8,754 passages" width="100%">
+</p>
+
+### How accurate is it?
+
+The test results in plain English, which search method finds the right source best, and whether passage size
+matters. Full tables are one click away for analysts.
+
+<p align="center">
+  <img src="docs/images/evaluation.png" alt="Accuracy: right source first 95%, claims backed by sources 91%, citations real 100%, and a comparison of search methods" width="100%">
+</p>
+
+---
+
+## Metrics on the dashboard
+
+The accuracy tab and every answer report these measures. Test results use 76 questions: 63 written by an AI from a
+known passage (so the right answer is known), 10 written by hand, and 3 deliberately unanswerable.
+
+**Finding the right source** (the combined method with re-checking, on the 19 fair test questions)
+
+| Metric | What it tells you | How it's calculated | Value |
+|---|---|---|---|
+| Right source ranked first (Recall@1) | How often the very first result is the right document | Questions where the correct document is ranked #1 ÷ all questions | **95%** |
+| Right source in the top 5 (Recall@5) | Whether the answer is among what the AI reads | Questions where the correct document is in the top 5 ÷ all questions | **100%** |
+| How high the right source ranks (MRR) | Ranking quality in one number | Average of 1 ÷ (position of the correct document); 1.0 = always first | **0.965** |
+| Ranking quality of the top 5 (nDCG@5) | Whether the best passages come first | Rewards correct documents near the top more than lower down | **0.974** |
+
+**Quality of the answers** (25-question sample, judged by a separate, smaller AI model)
+
+| Metric | What it tells you | How it's calculated | Value |
+|---|---|---|---|
+| Claims backed by sources (faithfulness) | Whether it makes things up | Share of the answer's statements supported by the cited passages | **91%** |
+| Answer relevance | Whether it answers the question asked | Judged relevance of the answer to the question | **89%** |
+| Passages that were relevant (context relevance) | How much of what it read was useful | Share of the 5 passages given to the AI that bear on the question | **56%** |
+| Citations that are real (citation accuracy) | Whether any reference is invented | Citation numbers that point to a passage it actually retrieved ÷ all citations (checked automatically) | **100%** |
+| Claims with a citation (citation coverage) | Whether claims are sourced | Answer statements carrying a citation ÷ all statements | **92%** |
+| Wrongly refused (false refusal rate) | Whether it's too cautious | Answerable questions it declined ÷ answerable questions | **8%** |
+
+**Speed and cost** (reported with every answer)
+
+| Metric | What it tells you | Value |
+|---|---|---|
+| Time to answer | End-to-end wait, including search and writing | **1.6 s** average (2.2 s for the slowest 5%) |
+| How well the sources match (confidence) | The system's confidence that the passages answer the question | Shown per answer (e.g. 94%) |
+| Sources used | How many passages the answer cites | Shown per answer |
+| Tokens and cost | How much AI text was processed, and what it cost | About 2,700 tokens · **$0** on the free tier |
+
+The weakest number, context relevance (56%), is expected: five passages are sent and usually only two or three
+matter. Sending fewer would raise it but risk missing the answer. Faithfulness stays high because the AI ignores
+the irrelevant passages.
+
+---
+
+## How it works
 
 ```mermaid
-flowchart TD
-    docs["PubMed Central + openFDA + your PDFs"] --> ingest["Ingest, clean, chunk, keep page and section"]
-    ingest --> embed["Local embeddings · BGE-small"]
-    embed --> faiss["Vector search · FAISS"]
-    ingest --> bm25["Keyword search · BM25"]
-    faiss --> hybrid["Hybrid · reciprocal rank fusion"]
-    bm25 --> hybrid
-    hybrid --> rerank["Cross-encoder reranker · top 20 to top 5"]
-    rerank --> llm["Groq gpt-oss-120b"]
-    llm --> answer["Answer + citations + confidence"]
-    answer --> ui["FastAPI → Streamlit"]
+flowchart LR
+    docs["Research papers<br/>+ FDA drug labels"] --> ingest["Split into passages,<br/>keep page and section"]
+    ingest --> meaning["Search by meaning<br/>(vector)"]
+    ingest --> keywords["Search by keywords<br/>(BM25)"]
+    meaning --> combine["Combine both rankings"]
+    keywords --> combine
+    combine --> recheck["Re-check the top 20,<br/>keep the best 5"]
+    recheck --> llm["AI writes the answer<br/>from those 5 only"]
+    llm --> answer["Answer + numbered sources"]
+    classDef step fill:#ffffff,stroke:#d3d8dd,color:#18212a
+    classDef out fill:#e3f1f4,stroke:#0b6e8a,color:#18212a
+    class docs,ingest,meaning,keywords,combine,recheck,llm step
+    class answer out
 ```
+
+1. **Build the library.** Papers and drug labels are downloaded automatically from PubMed Central and openFDA, and
+   split into short passages that remember their page and section.
+2. **Search two ways.** One search finds passages with the same *meaning* (even with different words); the other
+   finds the same *keywords*. Their rankings are merged.
+3. **Re-check.** A second model re-reads the top 20 passages next to the question and keeps the best 5, from
+   different documents where possible.
+4. **Answer.** The AI is told to use only those 5 passages, cite each claim, and refuse if they don't contain the
+   answer. The search and re-check run on your computer; only the final writing step calls an AI service.
 
 ---
 
-## Quickstart
+## Run it
 
 ```bash
 uv venv --python 3.11 && source .venv/bin/activate
 uv pip install -e ".[dev]"
-
-cp .env.example .env        # add a GROQ_API_KEY (free) — optional, see below
-
-hcrag ingest                # download ~290 documents
-hcrag index                 # chunk + embed + build FAISS & BM25
-hcrag ask "What are the first-line treatments for hypertension?"
+cp .env.example .env
 ```
 
-Then the app:
+Add a free `GROQ_API_KEY` to `.env` (optional: without one it runs offline, pulling sentences straight from the
+sources instead of writing an answer). Then build the library and open the app:
 
 ```bash
-hcrag serve      # FastAPI  → http://localhost:8000/docs
-hcrag ui         # Streamlit → http://localhost:8501
+hcrag ingest
+hcrag index
+hcrag ui
 ```
 
-Or the whole stack:
+The app opens at http://localhost:8501. `hcrag ingest` downloads about 290 documents and `hcrag index` builds the
+search indexes. You can also ask from the command line with
+`hcrag ask "What are the first-line treatments for hypertension?"`, or run the API with `hcrag serve`
+(http://localhost:8000/docs).
+
+Or run the whole stack in Docker:
 
 ```bash
-docker compose --profile setup run --rm ingest   # one-off corpus + index
-docker compose up --build                        # qdrant + api + ui
+docker compose --profile setup run --rm ingest
+docker compose up --build
 ```
 
-### LLM providers
+---
+
+## For technical reviewers
+
+<details>
+<summary><b>AI providers</b></summary>
 
 `LLM_PROVIDER=auto` resolves in order: **Groq → Gemini → OpenAI → Ollama → extractive**.
 
@@ -113,9 +207,10 @@ docker compose up --build                        # qdrant + api + ui
 
 Embeddings and reranking always run locally, so the LLM is the only component that ever touches a paid service.
 
----
+</details>
 
-## The modules
+<details>
+<summary><b>Architecture and modules</b></summary>
 
 | | Module | Where |
 |---|---|---|
@@ -133,9 +228,10 @@ Embeddings and reranking always run locally, so the LLM is the only component th
 | 12 | Streamlit frontend | `frontend/app.py` |
 | 13 | Deployment | `Dockerfile`, `docker-compose.yml` |
 
----
+</details>
 
-## Corpus
+<details>
+<summary><b>Corpus construction</b></summary>
 
 Built from two public, licence-clean sources, downloaded programmatically and idempotently:
 
@@ -144,9 +240,10 @@ Built from two public, licence-clean sources, downloaded programmatically and id
 
 Searching PMC required care. A relevance-sorted free-text query for `hypertension management` returns epidemiology papers that merely *mention* hypertension; requiring the concept in the **title** is what makes the corpus clinically on-topic.
 
----
+</details>
 
-## Engineering notes
+<details>
+<summary><b>Engineering notes: six decisions that were not obvious</b></summary>
 
 Six decisions that were not obvious, and what forced them.
 
@@ -162,9 +259,10 @@ Six decisions that were not obvious, and what forced them.
 
 **Models are warmed at startup.** The embedder and cross-encoder load lazily, so without a warmup the first query reports ~5 s of "retrieval latency" that is really model loading. Every latency number below is post-warmup.
 
----
+</details>
 
-## Evaluation
+<details>
+<summary><b>Full evaluation: results, chunk-size sweep, test-set construction, leakage and limitations</b></summary>
 
 ```bash
 hcrag make-evalset --n 90   # bootstrap a labelled test set
@@ -258,9 +356,10 @@ Two things follow. BM25's apparent superiority was an artifact of how the test s
 
 **Generation metrics run on a 25-question subsample.** Groq's free tier allows 1000 requests/day, and four arms × 76 questions × (1 generation + 3 judge calls) exceeds that. Retrieval is scored on all 76 questions for all arms because it needs no LLM at all.
 
----
+</details>
 
-## API
+<details>
+<summary><b>API</b></summary>
 
 ```
 POST /query          question → grounded answer + citations + timings
@@ -278,9 +377,10 @@ curl -X POST localhost:8000/query \
   -d '{"question":"What are the contraindications for ACE inhibitors?"}'
 ```
 
----
+</details>
 
-## Layout
+<details>
+<summary><b>Repository layout and tests</b></summary>
 
 ```
 data/{raw,processed,indexes,metadata,evaluation}
@@ -295,12 +395,17 @@ api/main.py · frontend/app.py · tests/
 ```
 
 ```bash
-pytest -q        # 64 tests
+pytest -q        # 95 tests
 ruff check .
 ```
+
+</details>
 
 ---
 
 ## Safety
 
-Decision support for exploring literature, **not** a medical device and not patient advice. The prompt forbids using prior knowledge, requires a citation per claim, and mandates refusal when the context is insufficient — but an LLM can still misread a passage. Every answer ships with its sources so claims can be checked against the original text.
+Decision support for exploring the literature, **not** a medical device and not patient advice. The prompt forbids
+using prior knowledge, requires a citation per claim, and requires a refusal when the passages are insufficient,
+but an AI can still misread a passage. Every answer ships with its sources so claims can be checked against the
+original text.

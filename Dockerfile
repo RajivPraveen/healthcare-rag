@@ -50,6 +50,7 @@ FROM models AS runtime
 COPY src ./src
 COPY api ./api
 COPY frontend ./frontend
+COPY .streamlit ./.streamlit
 
 RUN mkdir -p data/raw data/processed data/indexes data/metadata data/evaluation
 
